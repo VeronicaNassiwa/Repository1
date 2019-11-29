@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+    <body style="background-color:powderblue;">
 <h2> This is my Log in form for my progect</h2>
 <title> Login</title>
 <p>Enter your firstName and LastName</p>
-<p> FirstName<br> LastName</p>
+<p> FirstName</p>
 <P id="demo"></P>
-
-<script>   
-function myfunction(){
-    document.getElementById('demo').innerHTML='FirstName';
-}
+<P id="demoo"> Click</P>
+<script>
+    function agee(){ 
+    }
+   document.getElementById("demoo").innerHTML="20years";
 </script>
-<button type="button" aria-orientation="horizontal" onclick="myfunction";  
+ <button type="button"  onclick="agee()" >Click here</button>
+<script>
+var Girl ={Height:"30", colour:"chocolate",Ethinicity:"Africa",Age:"20yrs"};
+document.getElementById("demo").innerHTML= "This girl is " + Girl.Age +
+ "years old and she is from" +  Girl.Ethinicity;
+ 
+ 
+</script>
 
 </body>
-
 </html>
