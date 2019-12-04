@@ -2,26 +2,38 @@
 <html>
 
     <body style="background-color:powderblue;">
-<h2> This is my Log in form for my progect</h2>
-<title> Login</title>
-<center>
-<h2>MY APP</h2>
-<p>Enter your firstName and LastName</p>
-<p> FirstName</p>
-<P id="demo"></P>
+            <title> Calculator</title>
+            <center>
+<h3> This is my Calculator page</h3>
+
+<h2>MY calik</h2>
+<p id="demo"></p>
+<form>
+    
+<input type="text" id="firstnumber" placeholder="Fnunber" >
+<input type="text" id="lastnumber" placeholder="Lnumber" >
+<br></br>
+<button type="button" onclick="addd()" >MULT</button>
+<button type="button" onclick="sub()" >SUB</button>
+
+
+
+</form>
 <script>
-    function agee(y,z ){ 
-        return y + z ;
-    }
-   
-</script>
-<p id="demoo">Iam</p>
- <button onclick="document.getElementById('demoo').innerHTML=agee(10,10)";>Click to kno my Age</button>
-<script>
-var Girl ={Height:"30", colour:"chocolate",Ethinicity:"Africa",Age:"20yrs"};
-document.getElementById("demo").innerHTML= "This girl is " + Girl.Age +
- "years old and she is from" +  Girl.Ethinicity;
- 
+function addd(){
+    let fnumber1=document.getElementById("firstnumber").value;
+    let lstnumber=document.getElementById("lastnumber").value;
+    let z=fnumber1 * lstnumber;
+    document.getElementById("demo").innerHTML= "The answer is" + " " + z ;
+}
+
+function sub(){
+    let fnm=document.getElementById("firstnumber").value;
+    let lnm=document.getElementById("lastnumber").value;
+    let x=fnm-lnm;
+    document.getElementById("demo").innerHTML= "The answer is" + " " + x ;
+}
+
 </script>
 </center>
 </body>

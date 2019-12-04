@@ -1,7 +1,7 @@
 <html>
 <body style="background-color: lightblue;">
     <center>
-<p style="animation: 0ms;" fontsize="40" >SIgnup Form For My Application</p>
+<p >SIgnup Form For My Application</p>
 <form>
 <input type="text" placeholder="FirstName" id="fn" name="Fname">
 <p>
@@ -10,17 +10,17 @@
 </form>
 <script>
     function clicked(){
-    if(Fname.fn==Fname && Lname.ln==Lname){
-        window.alert("hey");
-    }
-    else{
-        window.alert("your wrong");
-    }
+
+ 
+  var fnamee=document.getElementById("fn").value;
+  var lstnm=document.getElementById("ln").value;
+  document.getElementById("demo").innerHTML= "My name is " + fnamee + "  "  + lstnm;
 }
     </script>
     <p id="demo"></p>
-<button type="button" onclick=="clicked()"> My Full Name is</button>
+<button type="button" onclick="clicked()"> My Full Name is</button>
 </center>
+
 </body>
 
 </html>
