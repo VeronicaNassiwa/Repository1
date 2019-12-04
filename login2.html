@@ -1,0 +1,26 @@
+<html>
+<body style="background-color: lightblue;">
+    <center>
+<p >SIgnup Form For My Application</p>
+<form>
+<input type="text" placeholder="FirstName" id="fn" name="Fname">
+<p>
+    <input type="text" placeholder="LastName" id="ln" name="Lname">
+</p>
+</form>
+<script>
+    function clicked(){
+
+ 
+  var fnamee=document.getElementById("fn").value;
+  var lstnm=document.getElementById("ln").value;
+  document.getElementById("demo").innerHTML= "My name is " + fnamee + "  "  + lstnm;
+}
+    </script>
+    <p id="demo"></p>
+<button type="button" onclick="clicked()"> My Full Name is</button>
+</center>
+
+</body>
+
+</html>

@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-<h2> This is my Log in form for my progect</h2>
-<title> Login</title>
-<p>Enter your firstName and LastName</p>
-<p> FirstName<br> LastName</p>
-<P id="demo"></P>
+    <body style="background-color:powderblue;">
+            <title> Calculator</title>
+            <center>
+<h3> This is my Calculator page</h3>
 
-<script>   
-function myfunction(){
-    document.getElementById('demo').innerHTML='FirstName';
+<h2>MY calik</h2>
+<p id="demo"></p>
+<form>
+    
+<input type="text" id="firstnumber" placeholder="Fnunber" >
+<input type="text" id="lastnumber" placeholder="Lnumber" >
+<br></br>
+<button type="button" onclick="addd()" >MULT</button>
+<button type="button" onclick="sub()" >SUB</button>
+
+
+
+</form>
+<script>
+function addd(){
+    let fnumber1=document.getElementById("firstnumber").value;
+    let lstnumber=document.getElementById("lastnumber").value;
+    let z=fnumber1 * lstnumber;
+    document.getElementById("demo").innerHTML= "The answer is" + " " + z ;
 }
+
+function sub(){
+    let fnm=document.getElementById("firstnumber").value;
+    let lnm=document.getElementById("lastnumber").value;
+    let x=fnm-lnm;
+    document.getElementById("demo").innerHTML= "The answer is" + " " + x ;
+}
+
 </script>
-<button type="button" aria-orientation="horizontal" onclick="myfunction";  
-
+</center>
 </body>
-
 </html>
